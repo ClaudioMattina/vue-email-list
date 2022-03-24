@@ -8,7 +8,8 @@
     <!-- vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <!-- axios -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js)"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+
     <title>API email</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
     <div id="app">
         <div>
             <ul>
-                <li> {{email}} </li>
+                <li v-for="element in emails" > {{ element }} </li>
             </ul>
         </div>
     </div>
